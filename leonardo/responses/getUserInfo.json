@@ -1,0 +1,15 @@
+{
+  "user_details": [
+    {
+      "user": {
+        "id": "b5df4a4f-7898-43ef-8c9e-b53785b7ddde",
+        "username": "ehaisong"
+      },
+      "tokenRenewalDate": null,
+      "subscriptionTokens": 150,
+      "subscriptionGptTokens": 1000,
+      "subscriptionModelTokens": 1,
+      "apiConcurrencySlots": 5
+    }
+  ]
+}

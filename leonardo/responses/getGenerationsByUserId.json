@@ -1,0 +1,65 @@
+{
+  "generations_by_pk": {
+    "generated_images": [
+      {
+        "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/c369a970-6010-4f99-9408-8105ab6107b8/Default_An_hippo_riding_a_motorcycle_0.jpg",
+        "nsfw": false,
+        "id": "35cc15df-bd1c-457a-974e-abb1a54a4e70",
+        "likeCount": 0,
+        "motionMP4URL": null,
+        "generated_image_variation_generics": []
+      },
+      {
+        "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/c369a970-6010-4f99-9408-8105ab6107b8/Default_An_hippo_riding_a_motorcycle_1.jpg",
+        "nsfw": false,
+        "id": "9fb4eab9-dd75-4ccf-bfcd-14636d8ac924",
+        "likeCount": 0,
+        "motionMP4URL": null,
+        "generated_image_variation_generics": []
+      },
+      {
+        "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/c369a970-6010-4f99-9408-8105ab6107b8/Default_An_hippo_riding_a_motorcycle_2.jpg",
+        "nsfw": false,
+        "id": "893ecce2-3a33-4e26-a44f-38223aa08c9d",
+        "likeCount": 0,
+        "motionMP4URL": null,
+        "generated_image_variation_generics": []
+      },
+      {
+        "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/c369a970-6010-4f99-9408-8105ab6107b8/Default_An_hippo_riding_a_motorcycle_3.jpg",
+        "nsfw": false,
+        "id": "714b8bc3-2ef5-4e1e-be2f-cd2428988a8d",
+        "likeCount": 0,
+        "motionMP4URL": null,
+        "generated_image_variation_generics": []
+      }
+    ],
+    "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3",
+    "motion": null,
+    "motionModel": null,
+    "motionStrength": null,
+    "prompt": "An hippo riding a motorcycle.",
+    "negativePrompt": "",
+    "imageHeight": 512,
+    "imageToVideo": null,
+    "imageWidth": 512,
+    "inferenceSteps": 15,
+    "seed": 327023104,
+    "public": false,
+    "scheduler": "EULER_DISCRETE",
+    "sdVersion": "v2",
+    "status": "COMPLETE",
+    "presetStyle": null,
+    "initStrength": null,
+    "guidanceScale": 7,
+    "id": "c369a970-6010-4f99-9408-8105ab6107b8",
+    "createdAt": "2024-02-27T08:33:14.169",
+    "promptMagic": false,
+    "promptMagicVersion": null,
+    "promptMagicStrength": null,
+    "photoReal": false,
+    "photoRealStrength": null,
+    "fantasyAvatar": null,
+    "generation_elements": []
+  }
+}

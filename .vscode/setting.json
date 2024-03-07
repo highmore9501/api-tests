@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.shellArgs.windows": [
+    "/K",
+    "${workspaceFolder}\\.venv\\Scripts\\activate.bat"
+  ],
+  "terminal.integrated.shellArgs.osx": ["-l"],
+  "terminal.integrated.shellArgs.linux": ["-l"]
+}

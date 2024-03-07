@@ -1,0 +1,282 @@
+[
+  {
+    "explain": "告诉用户已经开始处理请求",
+    "data": {
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "created_at": 1709280116,
+      "id": "run_32c3e83920e44c1fbca7beb8fe114154",
+      "instructions": "是一个AI搜索引擎，擅长利用网络搜索参考资料回答用的问题\n回答中若参考了函数返回结果中的信息，请在该句末尾用【1†source】【2†source】【3†source】的形式标注信息来源。严禁使用其他的引用格式（如[1],【1】,²等等）。\n当前时间：2024-03-01, 周五。",
+      "metadata": { "\u003c/NUM_INPUT_MSGS\u003e": "1" },
+      "model": "abab6-chat",
+      "object": "run",
+      "status": "in_progress",
+      "t2a_control": {
+        "combine": false,
+        "model": "speech-01",
+        "oss": "",
+        "return_bytes": false,
+        "text": "",
+        "timbre_weights": { "male-qn-qingse": 1 }
+      },
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "tools": [{ "type": "web_search" }]
+    },
+    "base_resp": {}
+  },
+  {
+    "explain": "已经将用户的语音转化为文字，并将文字内容提交给ai，准备进行处理",
+    "data": {
+      "id": "msg_ab2fae1e7f87445cac21d903712dbda9",
+      "object": "message",
+      "created_at": 1709280116,
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "role": "user",
+      "content": [
+        {
+          "type": "audio_file",
+          "audio_file": { "file_id": "113555157340296" }
+        },
+        {
+          "type": "text",
+          "text": { "value": "今天的新闻。", "annotations": [] }
+        }
+      ],
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154",
+      "metadata": { "\u003c/ASR_AUDIO_DURATION\u003e": "1" }
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "开始调用web_search工具，搜索关于“今天的新闻”的信息",
+    "data": {
+      "id": "step_bdf3bd9096d140779a447639abe6179f",
+      "object": "run step",
+      "created_at": 1709280118,
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154",
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "type": "tool_calls",
+      "status": "completed",
+      "step_details": {
+        "type": "tool_calls",
+        "tool_calls": [
+          {
+            "id": "call_da3ea2e6f0b5483a80de1603999ed631",
+            "type": "web_search",
+            "web_search": { "name": "", "arguments": "" }
+          }
+        ]
+      }
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "web_search功能已经搜索到结果",
+    "data": {
+      "id": "step_134cf8f16b5b461abc5e55e972d67a2c",
+      "object": "run step",
+      "created_at": 1709280118,
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154",
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "type": "message_creation",
+      "status": "completed",
+      "completed_at": 1709280118,
+      "step_details": {
+        "type": "message_creation",
+        "message_creation": {
+          "message_id": "msg_03ddc0dc00bb41c192baef8f5888cd25"
+        }
+      }
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "AI根据搜索到的新闻生成文本回复",
+    "data": {
+      "id": "msg_03ddc0dc00bb41c192baef8f5888cd25",
+      "object": "message",
+      "created_at": 1709280118,
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "role": "ai",
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "value": "今天的新闻包括：\n\n1. 中国人民政治协商会议第十四届全国委员会常务委员会第五次会议决定，中国人民政治协商会议第十四届全国委员会第二次会议将于2024年3月1日召开【1†source】。\n\n2. 北京市大兴区消防救援支队将于2024年3月1日上午10时在大兴区香海园小区开展灭火救援综合实战演练，期间将使用油盆火和烟雾弹，可能会有较多消防车辆在周边道路通行和集结，市民朋友无需惊慌，注意避让【2†source】。\n\n3. 从2024",
+            "annotations": null
+          },
+          "id": "content_0bd78e5df96545b3ad951f1cb6c8339a"
+        }
+      ],
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154"
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "AI将上一步生成的文本回复转化为语音发送回来id，同时还在继续生成文本回复",
+    "data": {
+      "id": "msg_03ddc0dc00bb41c192baef8f5888cd25",
+      "object": "message",
+      "created_at": 1709280118,
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "role": "ai",
+      "content": [
+        {
+          "type": "audio_file",
+          "id": "content_426c9f71a74646f0a03166410fa60973",
+          "audio_file": {
+            "file_id": "",
+            "value": "###此处是模型回复的音频内容的hex编码###"
+          }
+        },
+        {
+          "type": "text",
+          "text": {
+            "value": "年3月1日起，横琴粤澳深度合作区将正式封关运行。合作区实施范围为横琴岛“一线”和“二线”之间的海关监管区域，总面积约106平方公里【4†source】。\n\n4. 俄罗斯宣布从3月1日起禁止汽油出口半年【5†source】。\n\n5. 国家税务总局公布《关于修改〈中华人民共和国发票管理办法实施细则〉的决定》，自2024年3月1日起施行，主要内容之一是明确电子发票基本管理规定【8†source】。\n\n这些是今日的主要新闻摘要。",
+            "annotations": null
+          },
+          "id": "content_0bd78e5df96545b3ad951f1cb6c8339a"
+        }
+      ],
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154"
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "AI将上一步生成的文本回复转化为语音发送回来id",
+    "data": {
+      "id": "msg_03ddc0dc00bb41c192baef8f5888cd25",
+      "object": "message",
+      "created_at": 1709280118,
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "role": "ai",
+      "content": [
+        {
+          "type": "audio_file",
+          "id": "content_426c9f71a74646f0a03166410fa60973",
+          "audio_file": {
+            "file_id": "",
+            "value": "###此处是模型回复的音频内容的hex编码###"
+          }
+        }
+      ],
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154"
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "返回显示参考信息网址",
+    "data": {
+      "id": "msg_03ddc0dc00bb41c192baef8f5888cd25",
+      "object": "message",
+      "created_at": 1709280118,
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "role": "ai",
+      "content": [
+        {
+          "type": "text",
+          "text": {
+            "value": "",
+            "annotations": [
+              {
+                "type": "web_citation",
+                "text": "【1†source】",
+                "start_index": 82,
+                "end_index": 92,
+                "web_citation": {
+                  "url": "http://politics.people.com.cn/n1/2024/0301/c1001-40186885.html",
+                  "quote": "3月1日 召开的中国人民政治协商会议第十四届全国委员会常务委员会第五次会议决定：中国人民政治协商会议第十四届全国委员会第二次会议于2024年 "
+                }
+              },
+              {
+                "type": "web_citation",
+                "text": "【2†source】",
+                "start_index": 195,
+                "end_index": 205,
+                "web_citation": {
+                  "url": "https://news.bjd.com.cn/2024/03/01/10711880.shtml",
+                  "quote": "北京市大兴区消防救援支队2月29日发布演练公告，该队将于2024年3月1日上午10时，在大兴区香海园小区开展灭火救援综合实战演练。实战演练期间将使用油盆火和烟雾弹，届时将有较多消防车辆在周边道路通行和集结，请广大市民朋友不要惊慌，注意避让。"
+                }
+              },
+              {
+                "type": "web_citation",
+                "text": "【4†source】",
+                "start_index": 281,
+                "end_index": 291,
+                "web_citation": {
+                  "url": "https://news.cctv.com/2024/02/29/ARTIczSJVNv6cMnzwSeXkkLV240229.shtml",
+                  "quote": "3月1日起，横琴粤澳深度合作区将正式封关运行。合作区实施范围为横琴岛“一线”和“二线”之间的海关监管区域，总面积约106平方公里。其中，横琴与澳门特别行政区之间设为“一线”，横琴与中华人民共和国关境内其他地区之间设为“二线”。"
+                }
+              },
+              {
+                "type": "web_citation",
+                "text": "【5†source】",
+                "start_index": 316,
+                "end_index": 326,
+                "web_citation": {
+                  "url": "https://tv.cctv.com/2024/03/01/VIDEcbvaIKj9QNjGK9oVtDeV240301.shtml",
+                  "quote": "00:02:39. [新闻直播间]俄罗斯 俄宣布从3月1日起禁止汽油出口半年. 00:00:23. [新闻直播间]阿布扎比 世贸组织第13届部长级会议将延期闭幕. 00:00:36. [新闻直播间]韩国实习和住院医生集体辞职 韩国政府再次呼吁辞职医生返岗. 00:02:00. [新闻直播间]韩国实习和住院医生 "
+                }
+              },
+              {
+                "type": "web_citation",
+                "text": "【8†source】",
+                "start_index": 402,
+                "end_index": 412,
+                "web_citation": {
+                  "url": "https://news.cctv.com/2024/02/28/ARTICxLo5PKd4yz8wjnVAKfT240228.shtml",
+                  "quote": "新修改的发票管理办法实施细则，3月1日起施行. 国家税务总局公布《关于修改〈中华人民共和国发票管理办法实施细则〉的决定》（国家税务总局令第56号），自2024年3月1日起施行。. 修改的主要内容有：一是明确电子发票基本管理规定， 强调“电子发票与纸质 "
+                }
+              }
+            ]
+          },
+          "id": "content_0bd78e5df96545b3ad951f1cb6c8339a"
+        },
+        {
+          "type": "audio_file",
+          "id": "content_426c9f71a74646f0a03166410fa60973",
+          "audio_file": { "file_id": "", "value": "" }
+        }
+      ],
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "run_id": "run_32c3e83920e44c1fbca7beb8fe114154"
+    },
+    "base_resp": {}
+  },
+
+  {
+    "explain": "返回结束信号",
+    "data": {
+      "assistant_id": "asst_c4e6732f29274a50b41493a5ecb4d6e2",
+      "created_at": 1709280116,
+      "id": "run_32c3e83920e44c1fbca7beb8fe114154",
+      "instructions": "是一个AI搜索引擎，擅长利用网络搜索参考资料回答用的问题\n回答中若参考了函数返回结果中的信息，请在该句末尾用【1†source】【2†source】【3†source】的形式标注信息来源。严禁使用其他的引用格式（如[1],【1】,²等等）。\n当前时间：2024-03-01, 周五。",
+      "metadata": { "\u003c/NUM_INPUT_MSGS\u003e": "1" },
+      "model": "abab6-chat",
+      "object": "run",
+      "status": "completed",
+      "t2a_control": {
+        "combine": false,
+        "model": "speech-01",
+        "oss": "",
+        "return_bytes": false,
+        "text": "",
+        "timbre_weights": { "male-qn-qingse": 1 }
+      },
+      "thread_id": "thread_ae55415b12e040b4bdc50ec82005d2f9",
+      "tools": [{ "type": "web_search" }]
+    },
+    "base_resp": { "status_code": 0 }
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "generations": [
+    {
+      "generated_images": [
+        {
+          "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/4497d6d2-a8f2-47fe-870e-217c19114ac8/Default_An_oil_painting_of_a_cat_0.jpg",
+          "nsfw": false,
+          "id": "d1ef6290-1ed0-44e8-aefc-780c98553b71",
+          "likeCount": 0,
+          "motionMP4URL": null,
+          "generated_image_variation_generics": []
+        },
+        {
+          "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/4497d6d2-a8f2-47fe-870e-217c19114ac8/Default_An_oil_painting_of_a_cat_1.jpg",
+          "nsfw": false,
+          "id": "d6f90445-71ad-469d-92aa-af60f9df0002",
+          "likeCount": 0,
+          "motionMP4URL": null,
+          "generated_image_variation_generics": []
+        },
+        {
+          "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/4497d6d2-a8f2-47fe-870e-217c19114ac8/Default_An_oil_painting_of_a_cat_2.jpg",
+          "nsfw": false,
+          "id": "0cfcb656-c685-465e-a247-c1b8bc42957e",
+          "likeCount": 0,
+          "motionMP4URL": null,
+          "generated_image_variation_generics": []
+        },
+        {
+          "url": "https://cdn.leonardo.ai/users/b5df4a4f-7898-43ef-8c9e-b53785b7ddde/generations/4497d6d2-a8f2-47fe-870e-217c19114ac8/Default_An_oil_painting_of_a_cat_3.jpg",
+          "nsfw": false,
+          "id": "a6a523c2-2221-41a8-826f-5271071281e5",
+          "likeCount": 0,
+          "motionMP4URL": null,
+          "generated_image_variation_generics": []
+        }
+      ],
+      "modelId": "6bef9f1b-29cb-40c7-b9df-32b51c1f67d3",
+      "motion": null,
+      "motionModel": null,
+      "motionStrength": null,
+      "prompt": "An oil painting of a cat",
+      "negativePrompt": "",
+      "imageHeight": 512,
+      "imageToVideo": null,
+      "imageWidth": 512,
+      "inferenceSteps": 15,
+      "seed": 138435328,
+      "public": false,
+      "scheduler": "EULER_DISCRETE",
+      "sdVersion": "v2",
+      "status": "COMPLETE",
+      "presetStyle": null,
+      "initStrength": null,
+      "guidanceScale": 7,
+      "id": "4497d6d2-a8f2-47fe-870e-217c19114ac8",
+      "createdAt": "2024-02-27T08:30:56.033",
+      "promptMagic": false,
+      "promptMagicVersion": null,
+      "promptMagicStrength": null,
+      "photoReal": false,
+      "photoRealStrength": null,
+      "fantasyAvatar": null,
+      "generation_elements": []
+    }
+  ]
+}
